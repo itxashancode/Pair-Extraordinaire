@@ -1,0 +1,55 @@
+{
+  "github": {
+    "repository": {
+      "owner": "Github NAME",
+      "name": "Repo NAME",
+      "default_branch": "main"
+    },
+    "merge": {
+      "method": "squash",
+      "retry_count": 3,
+      "retry_delay_seconds": 5
+    }
+  },
+  "run_settings": {
+    "pr_count": 2000,
+    "delay_seconds": 30,
+    "auto_merge": true,
+    "dry_run": false,
+    "max_retries": 3,
+    "repo_path": ".",
+    "readme_file": "README.md"
+  },
+  "collaborators": [
+    {
+      "name": "Account1",
+      "email": "Account1@gmail.com"
+    },
+    {
+      "name": "Account2",
+      "email": "Account2@gmail.com"
+    }
+  ],
+  "pull_request": {
+    "title": "🚀 Automated PR Update",
+    "labels": ["automated", "auto-pr"],
+    "draft": false
+  },
+  "coauthor": {
+    "name": "Account2",
+    "email": "Account2@gmail.com"
+  },
+  "files": {
+    "to_modify": [
+      "README.md",
+      "CHANGELOG.md",
+      "docs/updates.md"
+    ]
+  },
+  "notifications": {
+    "enabled": {
+      "slack": true,
+      "discord": true
+    }
+  }
+}
